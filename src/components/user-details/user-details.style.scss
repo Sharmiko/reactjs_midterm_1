@@ -1,0 +1,64 @@
+.full-user {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: min-content max-content 1fr;
+  //column-gap: 1.6rem;
+  row-gap: 2rem;
+  background-color: #fff;
+  padding: 2.4rem 1.2rem;
+  border-radius: 0.6rem;
+  font-size: 14px;
+  color: #000;
+
+
+  &__location-info {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 2rem;
+  }
+
+  &__company-info {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  &__post-header {
+    grid-row: 3;
+  }
+}
+
+p {
+  width: 500px;
+}
+
+.info-box {
+  &__header {
+    font-size: 1.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 0.6rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 0.3rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+.posts {
+  grid-column: 1 / span 3;
+  list-style: none;
+
+  &__item:not(:last-child){
+    margin-bottom: 1.2rem;
+  }
+}

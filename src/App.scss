@@ -1,0 +1,20 @@
+.App {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  height: 100vh;
+}
+
+.header {
+    grid-column: 1 / span 2;
+}
+
+.content {
+  background-color: #fff;
+  grid-column: 2;
+  padding: 1.2rem;
+}
+
+.footer {
+    grid-column: 1 / span 2;
+}

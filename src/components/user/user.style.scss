@@ -1,0 +1,27 @@
+.user {
+  display: grid;
+  grid-template-columns: 4.5rem repeat(3, minmax(min-content, 1fr)) min-content;
+  column-gap: 1.2rem;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+  color: #000;
+  border-bottom: 1px solid #000;
+
+
+  &__name {
+    margin-left: 100px;
+  }
+
+  &__details {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0.6rem;
+    width: 80px;
+  }
+}
